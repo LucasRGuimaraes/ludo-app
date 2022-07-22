@@ -1,9 +1,12 @@
+import React from 'react';
 import * as Styles from './styles';
+import { IProps } from './types';
 
-export default function PlayerSide() {
+const PlayerSide: React.FC<IProps> = ({ colors }) => {
+  
   return (
-    <Styles.PlayerSide>
-      <Styles.PlayerBase>
+    <Styles.PlayerSide color={colors}>
+      <Styles.PlayerBase color={colors}>
         <div>
           <div></div>
           <div></div>
@@ -12,7 +15,7 @@ export default function PlayerSide() {
         </div>
       </Styles.PlayerBase>
       <Styles.PlayerSideBoard>
-        <Styles.FirstRow>
+        <Styles.FirstRow color={colors}>
           <div></div>
           <div></div>
           <div></div>
@@ -20,7 +23,7 @@ export default function PlayerSide() {
           <div></div>
           <div></div>
         </Styles.FirstRow>
-        <Styles.SecondRow>
+        <Styles.SecondRow color={colors}>
           <div></div>
           <div></div>
           <div></div>
@@ -40,3 +43,5 @@ export default function PlayerSide() {
     </Styles.PlayerSide>
   );
 }
+
+export default PlayerSide;

@@ -5,10 +5,10 @@ export default function GameBoard () {
 
     return (
         <Styles.Board>
-            <PlayerSide />
-            <PlayerSide />
-            <PlayerSide />
-            <PlayerSide />
+            <PlayerSide colors="red" />
+            <PlayerSide colors="green" />
+            <PlayerSide colors="blue" />
+            <PlayerSide colors="yellow" />
         </Styles.Board>
     )
 }
