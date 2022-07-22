@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 
 export const PlayerSide = styled.div`
-
-    :root {
-        --player-color: #D4312F;
-    }
-    
     width: 300px;
     height: 450px;
 `
@@ -13,7 +8,7 @@ export const PlayerSide = styled.div`
 export const PlayerBase = styled.div`
     width: 100%;
     height: 66.6%;
-    background-color: var(--player-color);
+    background-color: ${({theme}) => theme.boardColors.red};
     border: 1px solid black;
     border-radius: 20px 0 0 0;
     padding: 35px;
@@ -58,7 +53,7 @@ export const FirstRow = styled.div`
     }
 
     div:nth-child(2) {
-        background-color: var(--player-color);
+        background-color: ${({theme}) => theme.boardColors.red};
     }
 `
 
@@ -73,7 +68,7 @@ export const SecondRow = styled.div`
         border: 1px solid black;
         width: 16.66%;
         height: 100%;
-        background-color: var(--player-color);
+        background-color: ${({theme}) => theme.boardColors.red};
     }
     
     div:nth-child(1) {
