@@ -1,45 +1,14 @@
-import { Board, FirstRow, PlayerBase, PlayerSide, PlayerSideBoard, SecondRow, ThirdRow } from "./styles";
+import * as Styles from "./styles";
+import PlayerSide from "../playerSide";
 
 export default function GameBoard () {
 
     return (
-        <Board>
-            <PlayerSide>
-                <PlayerBase>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </PlayerBase>
-                <PlayerSideBoard>
-                    <FirstRow>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </FirstRow>
-                    <SecondRow>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </SecondRow>
-                    <ThirdRow>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </ThirdRow>
-                </PlayerSideBoard>
-            </PlayerSide>
-        </Board>
+        <Styles.Board>
+            <PlayerSide />
+            <PlayerSide />
+            <PlayerSide />
+            <PlayerSide />
+        </Styles.Board>
     )
 }
