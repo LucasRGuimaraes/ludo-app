@@ -9,9 +9,17 @@ const allColors = {
   blue: colors.boardColors.blue,
 };
 
-export const PlayerSide = styled.div`
+const allPositions = {
+  player1: "0deg",
+  player2: "90deg",
+  player3: "180deg",
+  player4: "-90deg",
+}
+
+export const PlayerSide = styled.div<IStyle>`
   width: 300px;
   height: 450px;
+  transform: rotate(${({ position }) => allPositions[position]});
 `;
 
 export const PlayerBase = styled.div<IStyle>`

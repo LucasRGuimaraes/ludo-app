@@ -2,10 +2,10 @@ import React from 'react';
 import * as Styles from './styles';
 import { IProps } from './types';
 
-const PlayerSide: React.FC<IProps> = ({ colors }) => {
+const PlayerSide: React.FC<IProps> = ({ colors, positions }) => {
   
   return (
-    <Styles.PlayerSide color={colors}>
+    <Styles.PlayerSide color={colors} position={positions}>
       <Styles.PlayerBase color={colors}>
         <div>
           <div></div>
