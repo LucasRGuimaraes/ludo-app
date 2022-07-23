@@ -10,16 +10,35 @@ const allColors = {
 };
 
 const allPositions = {
-  player1: "0deg",
-  player2: "90deg",
-  player3: "180deg",
-  player4: "-90deg",
+  player1: {
+    rotate: "0deg",
+    top: "0",
+    left: "0"
+  },
+  player2: {
+    rotate: "90deg",
+    top: "-75px",
+    left: "375px"
+  },
+  player3: {
+    rotate: "180deg",
+    top: "300px",
+    left: "450px"
+  },
+  player4: {
+    rotate: "-90deg",
+    top: "375px",
+    left: "75px"
+  },
 }
 
 export const PlayerSide = styled.div<IStyle>`
   width: 300px;
   height: 450px;
-  transform: rotate(${({ position }) => allPositions[position]});
+  transform: rotate(${({ position }) => allPositions[position].rotate});
+  position: absolute;
+  top: ${({ position }) => allPositions[position].top};
+  left: ${({ position }) => allPositions[position].left};
 `;
 
 export const PlayerBase = styled.div<IStyle>`
