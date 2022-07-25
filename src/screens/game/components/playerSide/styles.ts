@@ -85,7 +85,7 @@ export const FirstRow = styled.div<IStyle>`
   flex-direction: row;
 
   div {
-    border: 0.5px solid black;
+    border: .5px solid black;
     width: calc(100% / 3);
   }
 
@@ -102,7 +102,7 @@ export const SecondRow = styled.div<IStyle>`
   flex-direction: row;
 
   div {
-    border: 0.5px solid black;
+    border: .5px solid black;
     width: calc(100% / 3);
     height: 100%;
     background-color: ${({ color }) => allColors[color]};
@@ -121,8 +121,50 @@ export const ThirdRow = styled.div`
   flex-direction: row;
 
   div {
-    border: 0.5px solid black;
+    border: .5px solid black;
     width: calc(100% / 3);
-    height: 100%;
+    height: 101%;
   }
 `;
+
+export const PlayerWinPlace = styled.div<IStyle>`
+  
+  width: 50%;
+  height: calc(100% / 3);
+  position: absolute;
+  top: calc((100% / 3) * 2);
+  left: 100%;
+
+  .triangle {
+    border: calc(65px / 2) solid transparent;
+    border-left: calc(65px / 2) solid ${({ color }) => allColors[color]};
+  }
+
+  .lineOne {
+    width: .5px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0px;
+  }
+
+  .lineTwo {
+    width: .5px;
+    height: calc(70% + 1px);
+    background: #000;
+    transform: rotate(45deg);
+    position: absolute;
+    top: calc(40% - 1px);
+    left: 25%;
+  }
+
+  .lineThree {
+    width: .5px;
+    height: calc(70% + 1px);
+    background: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -10%;
+    left: 25%;
+  }
+`

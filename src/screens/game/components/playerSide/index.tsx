@@ -40,6 +40,12 @@ const PlayerSide: React.FC<IProps> = ({ colors, positions }) => {
           <div></div>
         </Styles.ThirdRow>
       </Styles.PlayerSideBoard>
+      <Styles.PlayerWinPlace color={colors}>
+        <div className="triangle"></div>
+        <div className="lineOne"></div>
+        <div className="lineTwo"></div>
+        <div className="lineThree"></div>
+      </Styles.PlayerWinPlace>
     </Styles.PlayerSide>
   );
 }
