@@ -17,24 +17,24 @@ const allPositions = {
   },
   player2: {
     rotate: "90deg",
-    top: "-75px",
-    left: "375px"
+    top: "-10%",
+    left: "50%"
   },
   player3: {
     rotate: "180deg",
-    top: "300px",
-    left: "450px"
+    top: "40%",
+    left: "60%"
   },
   player4: {
     rotate: "-90deg",
-    top: "375px",
-    left: "75px"
+    top: "50%",
+    left: "10%"
   },
 }
 
 export const PlayerSide = styled.div<IStyle>`
-  width: 300px;
-  height: 450px;
+  width: 40%;
+  height: 60%;
   transform: rotate(${({ position }) => allPositions[position].rotate});
   position: absolute;
   top: ${({ position }) => allPositions[position].top};
@@ -43,17 +43,19 @@ export const PlayerSide = styled.div<IStyle>`
 
 export const PlayerBase = styled.div<IStyle>`
   width: 100%;
-  height: 300px;
+  height: calc((100% / 3) * 2);
   background-color: ${({ color }) => allColors[color]};
-  border: 1px solid black;
+  border: 0.5px solid black;
   border-radius: 20px 0 0 0;
-  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   div {
-    width: 230px;
-    height: 230px;
+    width: 75%;
+    height: 75%;
     background-color: white;
-    border: 1px solid black;
+    border: 0.5px solid black;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,8 +64,8 @@ export const PlayerBase = styled.div<IStyle>`
 
     div {
       border: none;
-      width: 50px;
-      height: 50px;
+      width: 45%;
+      height: 45%;
       border-radius: 50%;
       background-color: #d9d9d9;
     }
@@ -72,20 +74,19 @@ export const PlayerBase = styled.div<IStyle>`
 
 export const PlayerSideBoard = styled.div`
   width: 100%;
-  height: 150px;
+  height: calc(100% / 3);
 `;
 
 export const FirstRow = styled.div<IStyle>`
   width: 100%;
-  height: 50px;
+  height: calc(100% / 3);
   background-color: white;
   display: flex;
   flex-direction: row;
 
   div {
-    border: 1px solid black;
-    width: 50px;
-    height: 100%;
+    border: 0.5px solid black;
+    width: calc(100% / 3);
   }
 
   div:nth-child(2) {
@@ -95,14 +96,14 @@ export const FirstRow = styled.div<IStyle>`
 
 export const SecondRow = styled.div<IStyle>`
   width: 100%;
-  height: 50px;
+  height: calc(100% / 3);
   background-color: white;
   display: flex;
   flex-direction: row;
 
   div {
-    border: 1px solid black;
-    width: 50px;
+    border: 0.5px solid black;
+    width: calc(100% / 3);
     height: 100%;
     background-color: ${({ color }) => allColors[color]};
   }
@@ -114,14 +115,14 @@ export const SecondRow = styled.div<IStyle>`
 
 export const ThirdRow = styled.div`
   width: 100%;
-  height: 50px;
+  height: calc(100% / 3);
   background-color: white;
   display: flex;
   flex-direction: row;
 
   div {
-    border: 1px solid black;
-    width: 50px;
+    border: 0.5px solid black;
+    width: calc(100% / 3);
     height: 100%;
   }
 `;

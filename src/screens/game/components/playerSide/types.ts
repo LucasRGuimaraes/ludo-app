@@ -1,6 +1,6 @@
 export interface IProps {
     colors: IColors;
-    positions?: IPositions;
+    positions: IPositions;
 }
 
 export type IColors = 'red' | 'green' | 'yellow' | 'blue';
