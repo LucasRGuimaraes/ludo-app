@@ -2,10 +2,10 @@ import React from 'react';
 import * as Styles from './styles';
 import { IProps } from './types';
 
-const PlayerSide: React.FC<IProps> = ({ colors, positions }) => {
+const PlayerBoard: React.FC<IProps> = ({ colors, positions }) => {
   
   return (
-    <Styles.PlayerSide color={colors} position={positions}>
+    <Styles.PlayerBoard color={colors} position={positions} >
       <Styles.PlayerBase color={colors}>
         <div>
           <div></div>
@@ -46,8 +46,8 @@ const PlayerSide: React.FC<IProps> = ({ colors, positions }) => {
         <div className="lineTwo"></div>
         <div className="lineThree"></div>
       </Styles.PlayerWinPlace>
-    </Styles.PlayerSide>
+    </Styles.PlayerBoard>
   );
 }
 
-export default PlayerSide;
+export default PlayerBoard;

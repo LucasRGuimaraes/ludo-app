@@ -10,29 +10,29 @@ const allColors = {
 };
 
 const allPositions = {
-  player1: {
+  "top-left": {
     rotate: "0deg",
     top: "0",
     left: "0"
   },
-  player2: {
+  "top-right": {
     rotate: "90deg",
     top: "-10%",
     left: "50%"
   },
-  player3: {
+  "bottom-right": {
     rotate: "180deg",
     top: "40%",
     left: "60%"
   },
-  player4: {
+  "bottom-left": {
     rotate: "-90deg",
     top: "50%",
     left: "10%"
   },
 }
 
-export const PlayerSide = styled.div<IStyle>`
+export const PlayerBoard = styled.div<IStyle>`
   width: 40%;
   height: 60%;
   transform: rotate(${({ position }) => allPositions[position].rotate});
@@ -48,6 +48,7 @@ export const PlayerBase = styled.div<IStyle>`
   border: 0.5px solid black;
   border-radius: 20px 0 0 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 

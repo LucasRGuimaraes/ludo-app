@@ -1,14 +1,14 @@
 import * as Styles from "./styles";
-import PlayerSide from "../playerSide";
+import PlayerBoard from "../playerBoard";
 
 export default function GameBoard () {
 
     return (
         <Styles.Board>
-            <PlayerSide colors="red" positions="player1"/>
-            <PlayerSide colors="green" positions="player2"/>
-            <PlayerSide colors="blue" positions="player4"/>
-            <PlayerSide colors="yellow" positions="player3"/>
+            <PlayerBoard colors="red" positions="top-left"/>
+            <PlayerBoard colors="green" positions="top-right"/>
+            <PlayerBoard colors="blue" positions="bottom-right"/>
+            <PlayerBoard colors="yellow" positions="bottom-left"/>
         </Styles.Board>
     )
 }

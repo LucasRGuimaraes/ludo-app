@@ -4,7 +4,7 @@ export interface IProps {
 }
 
 export type IColors = 'red' | 'green' | 'yellow' | 'blue';
-export type IPositions = 'player1' | 'player2' | 'player3' | 'player4';
+export type IPositions = 'top-left' | 'top-right' | 'bottom-right' | 'bottom-left';
 
 export type IStyle = {
     color: IColors;
