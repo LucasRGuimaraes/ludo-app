@@ -1,6 +1,7 @@
 import React from 'react';
 import PlayerBase from '../playerBase';
 import PlayerSideBoard from '../playerSideBoard/';
+import PlayerWinPlace from '../playerWinPlace';
 import * as Styles from './styles';
 import { IProps } from './types';
 
@@ -10,15 +11,9 @@ const PlayerBoard: React.FC<IProps> = ({ colors, positions }) => {
     <Styles.PlayerBoard color={colors} position={positions} >
 
       <PlayerBase color={colors} />
-
       <PlayerSideBoard color={colors} />
+      <PlayerWinPlace color={colors}/>
 
-      <Styles.PlayerWinPlace color={colors}>
-        <div className="triangle"></div>
-        <div className="lineOne"></div>
-        <div className="lineTwo"></div>
-        <div className="lineThree"></div>
-      </Styles.PlayerWinPlace>
     </Styles.PlayerBoard>
   );
 }
