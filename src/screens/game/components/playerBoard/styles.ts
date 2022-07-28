@@ -41,61 +41,6 @@ export const PlayerBoard = styled.div<IStyle>`
   left: ${({ position }) => allPositions[position].left};
 `;
 
-export const PlayerSideBoard = styled.div`
-  width: 100%;
-  height: calc(100% / 3);
-`;
-
-export const FirstRow = styled.div<IStyle>`
-  width: 100%;
-  height: calc(100% / 3);
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-
-  div {
-    border: .5px solid black;
-    width: calc(100% / 3);
-  }
-
-  div:nth-child(2) {
-    background-color: ${({ color }) => allColors[color]};
-  }
-`;
-
-export const SecondRow = styled.div<IStyle>`
-  width: 100%;
-  height: calc(100% / 3);
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-
-  div {
-    border: .5px solid black;
-    width: calc(100% / 3);
-    height: 100%;
-    background-color: ${({ color }) => allColors[color]};
-  }
-
-  div:nth-child(1) {
-    background-color: white;
-  }
-`;
-
-export const ThirdRow = styled.div`
-  width: 100%;
-  height: calc(100% / 3);
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-
-  div {
-    border: .5px solid black;
-    width: calc(100% / 3);
-    height: 101%;
-  }
-`;
-
 export const PlayerWinPlace = styled.div<IStyle>`
   
   width: 50%;
