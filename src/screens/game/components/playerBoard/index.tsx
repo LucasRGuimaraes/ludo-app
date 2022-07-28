@@ -1,4 +1,5 @@
 import React from 'react';
+import PlayerBase from '../playerBase';
 import * as Styles from './styles';
 import { IProps } from './types';
 
@@ -6,14 +7,9 @@ const PlayerBoard: React.FC<IProps> = ({ colors, positions }) => {
   
   return (
     <Styles.PlayerBoard color={colors} position={positions} >
-      <Styles.PlayerBase color={colors}>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </Styles.PlayerBase>
+
+      <PlayerBase color={colors} />
+      
       <Styles.PlayerSideBoard>
         <Styles.FirstRow color={colors}>
           <div></div>
