@@ -8,7 +8,7 @@ export default function Game () {
         <Container>
             <PlayersInfo positions='top' firstName='Lucas' secondName='Caio' />
             <GameBoard />
-            <PlayersInfo positions='bottom' firstName='Joao' secondName='Cleber' />
+            <PlayersInfo positions='bottom' firstName='Liviane' secondName='Cleber' />
         </Container>
     )
 }
