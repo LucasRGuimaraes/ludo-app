@@ -5,10 +5,10 @@ import * as Styles from './styles';
 
 const PlayersHeader: React.FC<IProps> = ({ playerName, positions, flexDirection}) => {
 
-    const [diceNumber, setDiceNumber] = useState(null)
+    const [diceNumber, setDiceNumber] = useState(0)
 
     function rollDice () {
-        var randomNumber = Math.floor(Math.random() * 6) + 1;
+        const randomNumber = Math.floor(Math.random() * 6) + 1;
         setDiceNumber(randomNumber)
     }
 

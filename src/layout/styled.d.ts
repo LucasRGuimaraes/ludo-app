@@ -7,6 +7,12 @@ declare module 'styled-components' {
       blue: string;
       green: string;
       yellow: string;
-    } 
+    },
+    pieceColors: {
+      red: string;
+      blue: string;
+      green: string;
+      yellow: string;
+    }
   }
 }
