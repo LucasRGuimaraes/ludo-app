@@ -6,16 +6,13 @@ import * as Styles from './styles';
 import { IProps } from './types';
 
 const PlayerBoard: React.FC<IProps> = ({ colors, positions }) => {
-  
   return (
-    <Styles.PlayerBoard color={colors} position={positions} >
-
+    <Styles.PlayerBoard color={colors} position={positions}>
       <PlayerBase color={colors} />
       <PlayerSideBoard color={colors} />
-      <PlayerWinPlace color={colors}/>
-
+      <PlayerWinPlace color={colors} />
     </Styles.PlayerBoard>
   );
-}
+};
 
 export default PlayerBoard;

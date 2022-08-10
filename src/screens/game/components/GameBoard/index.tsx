@@ -1,7 +1,7 @@
-import * as Styles from "./styles";
-import PlayerBoard from "../playerBoard";
-import PlayerPiece from "../playerPiece";
-import { useState } from "react";
+import * as Styles from './styles';
+import PlayerBoard from '../playerBoard';
+import PlayerPiece from '../playerPiece';
+import { useState } from 'react';
 
 export default function GameBoard() {
   const [position, setPosition] = useState({

@@ -1,8 +1,8 @@
 export interface IProps {
-    color: IColors;
+  color: IColors;
 }
 export type IColors = 'red' | 'green' | 'yellow' | 'blue';
 
 export type IStyle = {
-    color: IColors;
-}
+  color: IColors;
+};

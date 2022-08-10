@@ -1,17 +1,17 @@
 export interface IProps {
-    color: IColors;
+  color: IColors;
 }
 
 export type ICases = {
-    isThirdCase?: boolean;
-}
+  isThirdCase?: boolean;
+};
 
 export type IRenderRowsCases = {
-    isThird: boolean;
-}
+  isThird: boolean;
+};
 
 export type IColors = 'red' | 'green' | 'yellow' | 'blue';
 
 export type IStyle = {
-    color: IColors;
-}
+  color: IColors;
+};

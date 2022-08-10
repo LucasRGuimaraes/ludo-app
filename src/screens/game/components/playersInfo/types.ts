@@ -1,11 +1,11 @@
 export interface IProps {
-    firstName: string;
-    secondName: string;
-    positions: IPositions;
+  firstName: string;
+  secondName: string;
+  positions: IPositions;
 }
 
-export type IPositions = 'top' | 'bottom'
+export type IPositions = 'top' | 'bottom';
 
 export type IStyle = {
-    position: IPositions;
-}
+  position: IPositions;
+};

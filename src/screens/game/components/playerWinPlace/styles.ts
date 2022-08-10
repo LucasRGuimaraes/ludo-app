@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import colors from '@layout/colors';
 
 const allColors = {
-    red: colors.boardColors.red,
-    green: colors.boardColors.green,
-    yellow: colors.boardColors.yellow,
-    blue: colors.boardColors.blue,
+  red: colors.boardColors.red,
+  green: colors.boardColors.green,
+  yellow: colors.boardColors.yellow,
+  blue: colors.boardColors.blue,
 };
 
 export const PlayerWinPlace = styled.div<IStyle>`
@@ -22,7 +22,7 @@ export const PlayerWinPlace = styled.div<IStyle>`
   }
 
   .lineOne {
-    width: .5px;
+    width: 0.5px;
     height: 100%;
     background: #000;
     position: absolute;
@@ -30,7 +30,7 @@ export const PlayerWinPlace = styled.div<IStyle>`
   }
 
   .lineTwo {
-    width: .5px;
+    width: 0.5px;
     height: calc(70% + 1px);
     background: #000;
     transform: rotate(45deg);
@@ -40,7 +40,7 @@ export const PlayerWinPlace = styled.div<IStyle>`
   }
 
   .lineThree {
-    width: .5px;
+    width: 0.5px;
     height: calc(70% + 1px);
     background: #000;
     transform: rotate(-45deg);
@@ -48,5 +48,4 @@ export const PlayerWinPlace = styled.div<IStyle>`
     top: -10%;
     left: 25%;
   }
-`
-  
+`;

@@ -3,10 +3,10 @@ import colors from '@layout/colors';
 import styled from 'styled-components';
 
 const allColors = {
-    red: colors.boardColors.red,
-    green: colors.boardColors.green,
-    yellow: colors.boardColors.yellow,
-    blue: colors.boardColors.blue,
+  red: colors.boardColors.red,
+  green: colors.boardColors.green,
+  yellow: colors.boardColors.yellow,
+  blue: colors.boardColors.blue,
 };
 
 export const PlayerSideBoard = styled.div`
@@ -22,7 +22,7 @@ export const FirstRow = styled.div<IStyle>`
   flex-direction: row;
 
   div {
-    border: .5px solid black;
+    border: 0.5px solid black;
     width: calc(100% / 3);
   }
 
@@ -39,7 +39,7 @@ export const SecondRow = styled.div<IStyle>`
   flex-direction: row;
 
   div {
-    border: .5px solid black;
+    border: 0.5px solid black;
     width: calc(100% / 3);
     height: 100%;
     background-color: ${({ color }) => allColors[color]};
@@ -59,9 +59,9 @@ export const ThirdRow = styled.div`
 `;
 
 export const Case = styled.div<ICases>`
-  border: .5px solid black;
+  border: 0.5px solid black;
   width: calc(100% / 3);
   height: 101%;
 
-  background-color: ${({isThirdCase}) => isThirdCase ? "#CEC9C1" : "white"};
+  background-color: ${({ isThirdCase }) => (isThirdCase ? '#CEC9C1' : 'white')};
 `;

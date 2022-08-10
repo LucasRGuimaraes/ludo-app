@@ -3,11 +3,11 @@ import colors from '@layout/colors';
 import styled from 'styled-components';
 
 const allColors = {
-    red: colors.boardColors.red,
-    green: colors.boardColors.green,
-    yellow: colors.boardColors.yellow,
-    blue: colors.boardColors.blue,
-  };
+  red: colors.boardColors.red,
+  green: colors.boardColors.green,
+  yellow: colors.boardColors.yellow,
+  blue: colors.boardColors.blue,
+};
 
 export const PlayerBase = styled.div<IStyle>`
   width: 100%;

@@ -1,4 +1,4 @@
-import 'styled-components'
+import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -7,12 +7,12 @@ declare module 'styled-components' {
       blue: string;
       green: string;
       yellow: string;
-    },
+    };
     pieceColors: {
       red: string;
       blue: string;
       green: string;
       yellow: string;
-    }
+    };
   }
 }
